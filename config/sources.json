@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "source_name": "cdr",
+      "landing_path": "data/cdr",
+      "file_pattern": "cdr_*.csv",
+      "target_bronze_table": "bronze_cdr",
+      "business_key": "call_id",
+      "active_flag": 1
+    },
+    {
+      "source_name": "customers",
+      "landing_path": "data/customers",
+      "file_pattern": "customers_*.csv",
+      "target_bronze_table": "bronze_customers",
+      "business_key": "customer_id",
+      "active_flag": 1
+    }
+  ]
+}
